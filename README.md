@@ -1,11 +1,10 @@
 Project Overview:
-This project was developed as part of a take-home exercise to demonstrate my skills in front-end development, state management, API integration, and responsive design. Weather Now offers up-to-date weather information including temperature, conditions, and other essential weather data, in an attractive and interactive interface.
+This project was developed as part of a take-home exercise to demonstrate my skills in front-end development, state management, API integration, and responsive design. Weather Now offers up-to-date weather information including temperature and conditions in an attractive and interactive interface.
 
 Features:
 City-Based Weather Search: Users can search for weather data by entering the city name.
 Real-Time Data Fetching: Weather Now retrieves current weather information using the Open-Meteo API.
 Responsive Design: The layout adapts seamlessly to various screen sizes, providing an optimal experience on both desktop and mobile devices.
-Dynamic Styling: The app features modern, stylish design elements, including background and text animations that vary with weather conditions.
 
 Tech Stack:
 Frontend: React, JavaScript (using Vite for fast, optimized builds)
@@ -15,7 +14,7 @@ Styling: CSS with custom animations for a dynamic user interface
 Usage:
 Enter the name of any city in the search box.
 Click the "Search" button to display current weather information for that location.
-The app will display the temperature, weather conditions, and other relevant details for the city.
+The app will display the temperature, and weather conditions.
 
 API:
 This application uses the Open-Meteo API to fetch current weather data. The API is free and does not require an API key, making it simple to integrate and efficient for real-time data fetching.
