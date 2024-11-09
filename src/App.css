@@ -1,0 +1,130 @@
+/* Resetting some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Ensure the body and html take up the full height */
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: #f0f8ff; /* Light background color */
+}
+
+/* Main container styling */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Ensures vertical centering */
+  align-items: center;      /* Ensures horizontal centering */
+  height: 100vh;            /* Take up the full viewport height */
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f8ff; /* Light background */
+  overflow: hidden;         /* Prevent overflow */
+}
+
+/* Heading styling */
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;       /* Ensures heading is centered */
+  width: 100%;              /* Ensures h1 takes full width */
+  display: flex;
+  justify-content: center;  /* Horizontally center the heading */
+}
+
+/* Weather form styling */
+.weather-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;          /* Max width to ensure it's not too wide */
+}
+
+/* Input box and button styling */
+.weather-form input,
+.weather-form button {
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  outline: none;
+}
+
+.weather-form input:focus,
+.weather-form button:focus {
+  border-color: #0056b3;
+}
+
+.weather-form button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.weather-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Weather display container */
+.weather-display {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures the weather info is centered */
+}
+
+/* Weather details styling */
+.weather-display h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.weather-display p {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.weather-display img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .weather-form {
+    flex-direction: column;
+  }
+
+  .weather-form input,
+  .weather-form button {
+    width: 100%;
+  }
+
+  .weather-display {
+    width: 90%;
+  }
+}
